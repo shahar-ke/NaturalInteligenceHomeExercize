@@ -21,5 +21,5 @@ things to consider in communication util:
     
 ## bugs
 - there is an implementation bug on the time window check
-- there is also a logical bug on the time window check regardless of its implementation as its only the DS layer that is being updated daily at 5AM, the ads can change in higher frequency and current design will skip such changes
+- there is also a logical bug on the time window check regardless of its implementation as its only the DS layer that is being updated daily at 5AM, the ads can change in higher frequency and current design will miss such changes not return accurate words score
  
