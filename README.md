@@ -10,7 +10,7 @@ this is a very simplified class designed to contain its data in memory and calle
 
 - the communication api, as I wrote all top down and haven't got to it.
 things to consider in communication util:
-    - server can be busy, communication should have a retry in case 5xx server error is returned, within retries limit and a short sleep between tries
+    - server can be busy, communication should have a retry in case 5xx server error is returned (4xx is a client bug and should be reported to it's customer), within retries limit and a short sleep between
 - for being more testable and modular:
     - each endpoint should have its own module and provided to analytic module constructor 
     - each endpoint module should use a comutil module to handle communication to server
